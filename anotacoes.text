@@ -1,0 +1,11 @@
+print("\n1- Facil")
+print("2- Médio")
+print("3- Dificil")
+
+opcao = input("Escolha a dificuldade:")
+
+print("Você escolheu: ", opcao)
+
+numero_secreto = random.randrange(1,100)
+total_tentativas = 7
+rodada = 1
