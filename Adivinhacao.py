@@ -1,13 +1,29 @@
 import random
-print('01011000011101001010010100100101101')
-print('***********************************')
-print('10110101 JOGO DE ADIVINHA 110100011')
-print('***********************************')
-print('01011000011101001010010100100101101')
+print('                           ***********************************')
+print('                           01011000011101001010010100100101101')
+print('\n                                    JOGO DE ADIVINHA \n')
+print('                           01011000011101001010010100100101101')
+print('                           ***********************************')
 
-numero_secreto = random.randrange(1,100)
-total_tentativas = 7
-rodada = 1
+
+print("\n1- Facil")
+print("2- Médio")
+print("3- Dificil")
+
+opcao = int (input("Escolha a dificuldade:"))
+
+print("Você escolheu: ", opcao)
+if (opcao ==1):
+    total_tentativas = 15
+    numero_secreto = random.randrange(1,50)
+elif (opcao ==2):
+    total_tentativas = 10
+    numero_secreto = random.randrange(1,80)
+elif (opcao ==3):
+    total_tentativas = 6
+    numero_secreto = random.randrange(1,100)
+else:
+    print("Essa opçâo não existe. Escolha uma opção valida.")
 
 for rodada in range(1, total_tentativas + 1):
     print ("\nTentativa {} de {}".format(rodada, total_tentativas))
