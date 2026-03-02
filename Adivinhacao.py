@@ -1,4 +1,5 @@
 import random
+
 print('                           ***********************************')
 print('                           01011000011101001010010100100101101')
 print('\n                                    JOGO DE ADIVINHA \n')
