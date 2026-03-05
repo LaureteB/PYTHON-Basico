@@ -7,10 +7,12 @@ AZUL = "\033[34m"
 RESET = "\033[0m"
 
 def escolher_nivel():
-    print("\nEscolha o nível: ")
-    print("1 -- Fácil (10 tentativas)")
-    print("2 -- Médio (5 tentativas)")
-    print("3 -- Difícil (3 tentativas)")
+    print("\nMENU\n Oque você precisa? ")
+    print("1 – Consultar saldo")
+    print("2 – Depositar")
+    print("3 – Sacar")
+    print("4 – Ver extrato")
+    print("5 – Sair")
 
     while True:
         nivel_srt = input("Digite apenas números (1, 2, 3): ")
@@ -40,7 +42,7 @@ def jogar():
     historico = []
 
     for rodada in range(1, total_tentativas + 1):
-        print (f"\nTentativa {rodada} de {total_tentativas}")
+        ##print ("\nTentativa {rodada} de {total_tentativas}".format(rodada,total_tentativas))
         chute_str = input("Digite o seu número entre 1 e 100: ")
 
         if not chute_str.isdigit():
